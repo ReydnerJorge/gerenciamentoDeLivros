@@ -10,12 +10,12 @@ class Livro
         @preco = preco
     end
 
-# Método para exibir informações do Livro
+    # Método para exibir informações do Livro
     def to_s
         "#{@titulo} por #{@autor} (#{@ano_publicacao}) - R$ #{@preco}"
     end
 
-# Método que calcula o desconto (10% se o livro for antigo)
+    # Método que calcula o desconto (10% se o livro for antigo)
     def preco_com_desconto
         if @ano_publicacao < 2000
             @preco * 0.9
